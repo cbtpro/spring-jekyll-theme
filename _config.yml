@@ -1,10 +1,8 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: 博客标题
+author: Github或Gitee用户
+email: 你的邮箱@example.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  在这里为你的新网站写一篇精彩的描述。您可以在_config.yml中编辑这一行。它将出现在您的文档头元(用于谷歌搜索结果)和feed.xml站点描述中。
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
