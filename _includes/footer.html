@@ -4,21 +4,21 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
-      <div class="footer-col one-half">
-      <h2 class="footer-heading">{{ site.title | escape }}</h2>
+      <!-- <div class="footer-col one-half">
+        <h2 class="footer-heading">{{ site.title | escape }}</h2>
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
-              {{ site.author | escape }}
+            {{ site.author | escape }}
             {%- else -%}
-              {{ site.title | escape }}
+            {{ site.title | escape }}
             {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
+          </li>
+          {%- if site.email -%}
+          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {%- endif -%}
         </ul>
-      </div>
+      </div> -->
 
       <div class="footer-col one-half">
         <p>{{- site.description | escape -}}</p>
@@ -29,6 +29,11 @@
       </div>
     </div>
 
+    {%- if site.for_the_record -%}
+    <div class="for-the-record">
+      基于Jekyll 大反派的博客 备案号 <a href="//beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">{{site.for_the_record}}</a>
+    </div>
+    {%- endif -%}
   </div>
 
 </footer>

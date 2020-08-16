@@ -1,22 +1,24 @@
-title: 博客标题
-author: Github或Gitee用户
-email: 你的邮箱@example.com
+title: 大反派
+author: cbtpro
+email: cbtpro@163.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  在这里为你的新网站写一篇精彩的描述。您可以在_config.yml中编辑这一行。它将出现在您的文档头元(用于谷歌搜索结果)和feed.xml站点描述中。
+  去你所能到达的最远处,等你到那儿,你会看得更远。Go as far as you can see; when you get there, you’ll be able to see farther.
 
+# 备案号
+for_the_record: 粤ICP备16033319号
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 spring-jekyll-theme:
   date_format: '%b %-d, %Y'
-
   # generate social links in footer
   social_links:
     github: cbtpro
     rss: rss
-    # bilibili: 2186010
-    # linkedin: cbtpro
+    github: cbtpro
+    bilibili: "2186010"
+    linkedin: 陈-碧滔-6985058b
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
