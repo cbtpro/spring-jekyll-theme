@@ -13,7 +13,7 @@ class Profile extends React.Component {
       'img',
       {
         onClick: () => this.setState({liked: true}),
-        src: '/assets/images/avatar.png',
+        src: './assets/images/avatar.png',
         style: { width: '64px' }
       }
     );
