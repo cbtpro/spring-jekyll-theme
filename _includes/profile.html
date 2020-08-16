@@ -1,0 +1,21 @@
+<style>
+    .card-basic div {
+        text-align: center;
+        line-height: 36px;
+    }
+</style>
+<div class="profile-content">
+    <sl-card class="card-basic">
+        <div>
+            <sl-avatar image="/assets/images/avatar.png" shape="circle"></sl-avatar>
+        </div>
+        <div>{{site.author}}</div>
+        <div>
+            <sl-badge>程序员</sl-badge>
+            <sl-badge>前端开发</sl-badge>
+        </div>
+        <div class="social-links">
+            {%- include social.html -%}
+        </div>
+    </sl-card>
+</div>

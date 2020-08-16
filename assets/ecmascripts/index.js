@@ -1,6 +1,6 @@
 'use strict';
 
-const createElement = React.createElement;
+const e = React.createElement;
 
 class Profile extends React.Component {
   constructor(props) {
@@ -9,10 +9,17 @@ class Profile extends React.Component {
   }
 
   render() {
-    return createElement('img', { src: '/assets/images/avatar.png', style: { width: '64px' } });
+    return e(
+      'img',
+      {
+        onClick: () => this.setState({liked: true}),
+        src: '/assets/images/avatar.png',
+        style: { width: '64px' }
+      }
+    );
   }
 }
 window.onload = () => {
   const domContainer = document.querySelector('#plugin-root');
-  ReactDOM.render(createElement(Profile), domContainer);
+  ReactDOM.render(e(Profile), domContainer);
 }

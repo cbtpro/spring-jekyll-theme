@@ -186,6 +186,9 @@
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
     width: calc(45% - (#{$spacing-unit} / 2));
   }
+  .profile-content {
+    display: block;
+  }
 }
 
 @media screen and (min-width: $on-medium) {
@@ -195,7 +198,12 @@
 }
 
 .profile-content {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit 24px;
+  position: absolute;
+  @include media-query($on-palm) {
+    display: none;
+  }
+  
 }
 /**
  * Page content
