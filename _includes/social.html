@@ -2,18 +2,18 @@
 <ul class="social-media-list">
   {%- if social.github -%}<li><a href="https://github.com/{{ social.github | cgi_escape | escape }}"
       title="{{ social.github | escape }}"><svg class="svg-icon grey">
-        <use xlink:href="{{ './assets/social-icons.svg#github' | relative_url }}"></use>
+        <use xlink:href="{{ '/assets/social-icons.svg#github' | relative_url }}"></use>
       </svg></a></li>{%- endif -%}
   {%- if social.bilibili -%}<li><a href="https://space.bilibili.com/{{ social.bilibili | cgi_escape | escape }}"
       title="{{ '哔哩哔哩🍻' | escape }}"><svg class="svg-icon grey">
-        <use xlink:href="{{ './assets/social-icons.svg#bilibili' | relative_url }}"></use>
+        <use xlink:href="{{ '/assets/social-icons.svg#bilibili' | relative_url }}"></use>
       </svg></a></li>{%- endif -%}
   {%- if social.linkedin -%}<li><a href="https://www.linkedin.com/in/{{ social.linkedin | cgi_escape | escape }}"
       title="{{ social.linkedin | escape }}"><svg class="svg-icon grey">
-        <use xlink:href="{{ './assets/social-icons.svg#linkedin' | relative_url }}"></use>
+        <use xlink:href="{{ '/assets/social-icons.svg#linkedin' | relative_url }}"></use>
       </svg></a></li>{%- endif -%}
   {%- if social.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}" title="{{ social.rss | escape }}"><svg
         class="svg-icon grey">
-        <use xlink:href="{{ './assets/social-icons.svg#rss' | relative_url }}"></use>
+        <use xlink:href="{{ '/assets/social-icons.svg#rss' | relative_url }}"></use>
       </svg></a></li>{%- endif -%}
 </ul>
