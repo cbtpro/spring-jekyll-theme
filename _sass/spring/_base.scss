@@ -73,6 +73,9 @@ main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
   @media screen and (min-width: $on-large) {
     margin-left: 310px;
+    @include media-query($on-palm) {
+      margin-left: 0px;  
+    }
   }
 }
 

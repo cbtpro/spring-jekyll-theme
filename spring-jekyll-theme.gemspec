@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "spring-jekyll-theme"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.3"
   spec.authors       = ["Peter Chen"]
   spec.email         = ["cbtpro@gmail.com"]
 
