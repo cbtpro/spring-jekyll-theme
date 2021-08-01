@@ -32,10 +32,11 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
+    {{ site.changyan }}
     {{ content }}
   </div>
-
-  {% if site.changyan %}
+  {% assign changyan = site.changyan %}
+  {% if changyan.enable %}
   {%- include disqus.html -%}
   {% endif %}
 

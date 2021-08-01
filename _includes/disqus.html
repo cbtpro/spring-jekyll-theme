@@ -1,9 +1,10 @@
 <!--PC和WAP自适应版-->
-<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句" ></div> 
+<div id="SOHUCS" sid="{{ page.id | url_encode }}" ></div> 
+{% assign changyan = site.changyan %}
 <script type="text/javascript"> 
 (function(){ 
-var appid = 'cyv0w4Idr'; 
-var conf = 'prod_5e174fc026ccc627c2d1028e481f61ea'; 
+appid = `{{ changyan.appid }}`
+conf = `{{ changyan.conf }}`
 var width = window.innerWidth || document.documentElement.clientWidth; 
 if (width < 960) {
 var head = document.getElementsByTagName('head')[0]||document.head||document.documentElement;
