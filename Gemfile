@@ -5,3 +5,4 @@ gemspec
 
 gem "kramdown-math-katex"
 gem "kramdown-parser-gfm"
+gem "jekyll-paginate"
